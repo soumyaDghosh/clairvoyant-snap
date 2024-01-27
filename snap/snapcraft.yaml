@@ -3,6 +3,11 @@ base: core22
 adopt-info: clairvoyant
 grade: stable
 confinement: strict
+contact: soumyadeepghosh2004@zohomail.in
+license: GPL-3.0
+issues: https://github.com/soumyaDghosh/clairvoyant-snap/issues
+source-code: https://github.com/cassidyjames/clairvoyant
+website: https://github.com/soumyaDghosh/clairvoyant-snap
 
 parts:
   clairvoyant:
