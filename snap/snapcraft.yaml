@@ -17,6 +17,9 @@ parts:
     source-depth: 1
     meson-parameters:
       - --prefix=/snap/clairvoyant/current/usr
+    override-pull: |
+      craftctl default
+      sed -i 's|https://github.com/cassidyjames/clairvoyant/issues|https://github.com/soumyaDghosh/clairvoyant-snap/issues|g' ${CRAFT_PART_SRC}/data/metainfo.appdata.xml.in
     organize:
       snap/clairvoyant/current: .
     parse-info: [usr/share/metainfo/com.github.cassidyjames.clairvoyant.metainfo.xml]
