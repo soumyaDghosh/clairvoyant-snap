@@ -9,6 +9,11 @@ issues: https://github.com/soumyaDghosh/clairvoyant-snap/issues
 source-code: https://github.com/cassidyjames/clairvoyant
 website: https://github.com/soumyaDghosh/clairvoyant-snap
 
+architectures:
+  - build-for: amd64
+  - build-for: arm64
+  - build-for: armhf
+
 parts:
   clairvoyant:
     plugin: meson
