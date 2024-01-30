@@ -35,5 +35,7 @@ apps:
     command: usr/bin/com.github.cassidyjames.clairvoyant
     desktop: usr/share/applications/com.github.cassidyjames.clairvoyant.desktop
     extensions: [gnome]
+    environment:
+      container: 'snap'
     plugs:
       - network
