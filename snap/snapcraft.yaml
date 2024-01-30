@@ -10,9 +10,9 @@ source-code: https://github.com/cassidyjames/clairvoyant
 website: https://github.com/soumyaDghosh/clairvoyant-snap
 
 architectures:
-  - build-for: amd64
-  - build-for: arm64
-  - build-for: armhf
+  - build-on: amd64
+  - build-on: arm64
+  - build-on: armhf
 
 parts:
   clairvoyant:
