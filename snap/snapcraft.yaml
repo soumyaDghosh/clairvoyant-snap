@@ -18,7 +18,7 @@ parts:
   clairvoyant:
     plugin: meson
     source: https://github.com/cassidyjames/clairvoyant.git
-    source-tag: '3.1.5'
+    source-tag: '3.1.6'
     source-depth: 1
     meson-parameters:
       - --prefix=/snap/clairvoyant/current/usr
