@@ -1,18 +1,16 @@
 name: clairvoyant
-base: core22 
+base: core24
 adopt-info: clairvoyant
 grade: stable
 confinement: strict
 contact: soumyadeepghosh2004@zohomail.in
-license: GPL-3.0
-issues: https://github.com/soumyaDghosh/clairvoyant-snap/issues
 source-code: https://github.com/cassidyjames/clairvoyant
 website: https://github.com/soumyaDghosh/clairvoyant-snap
 compression: lzo
-architectures:
-  - build-on: amd64
-  - build-on: arm64
-  - build-on: armhf
+platforms:
+  amd64:
+  arm64:
+  armhf:
 
 parts:
   clairvoyant:
@@ -43,5 +41,3 @@ apps:
     extensions: [gnome]
     environment:
       container: 'snap'
-    plugs:
-      - network
