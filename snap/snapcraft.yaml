@@ -22,6 +22,8 @@ parts:
       - --prefix=/snap/clairvoyant/current/usr
     override-pull: |
       craftctl default
+      sed -i 's#! Xdp.Portal.running_under_flatpak () ||##' ${CRAFT_PART_SRC}/src/MainWindow.vala
+      sed -i 's|Xdp.Portal.running_under_snap|! Xdp.Portal.running_under_snap|' ${CRAFT_PART_SRC}/src/MainWindow.vala
       sed -i 's|https://cassidyjames.com/support|https://github.com/soumyaDghosh/clairvoyant-snap/issues|g' ${CRAFT_PART_SRC}/data/metainfo.appdata.xml.in
       sed -i 's|https://github.com/cassidyjames/clairvoyant/issues|https://github.com/soumyaDghosh/clairvoyant-snap/issues|g' ${CRAFT_PART_SRC}/data/metainfo.appdata.xml.in
     organize:
@@ -39,5 +41,3 @@ apps:
     command: usr/bin/com.github.cassidyjames.clairvoyant
     desktop: usr/share/applications/com.github.cassidyjames.clairvoyant.desktop
     extensions: [gnome]
-    environment:
-      container: 'snap'
