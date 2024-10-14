@@ -43,6 +43,7 @@ parts:
       sed -i '67,70s/.*//' ${CRAFT_PART_SRC}/src/MainWindow.vala
       sed -i 's|https://cassidyjames.com/support|https://github.com/soumyaDghosh/clairvoyant-snap/issues|g' ${CRAFT_PART_SRC}/data/metainfo.appdata.xml.in
       sed -i 's|https://github.com/cassidyjames/clairvoyant/issues|https://github.com/soumyaDghosh/clairvoyant-snap/issues|g' ${CRAFT_PART_SRC}/data/metainfo.appdata.xml.in
+      sed -i 's#1.5.1#1.4.1#' ${CRAFT_PART_SRC}/meson.build
     organize:
       snap/clairvoyant/current: .
     parse-info: [usr/share/metainfo/com.github.cassidyjames.clairvoyant.metainfo.xml]
