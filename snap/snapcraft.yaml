@@ -16,7 +16,7 @@ parts:
   meson-deps:
     plugin: nil
     source: https://github.com/mesonbuild/meson.git
-    source-tag: '1.5.1'
+    source-tag: '1.6.0rc2'
     source-depth: 1
     override-build: |
       python3 -m pip install --break-system-packages .
