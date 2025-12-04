@@ -32,7 +32,7 @@ parts:
     after: [meson-deps]
     plugin: meson
     source: https://github.com/cassidyjames/clairvoyant.git
-    source-tag: '3.1.8'
+    source-tag: '3.1.12'
     source-depth: 1
     build-environment:
       - PATH: ${CRAFT_STAGE}/usr/bin:${PATH}
